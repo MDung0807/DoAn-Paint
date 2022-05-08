@@ -20,6 +20,13 @@ namespace DoAnGiuaKy_CaNhan.FObject
 
 
             Gp.DrawPolygon(myPen, myPoint);
+            if (check_select)
+            {
+                for (int i = 0; i < point.Count(); i++)
+                {
+                    Gp.FillRectangle(myBrush, point[i].X - 5, point[i].Y - 5, 10, 10);
+                }
+            }
 
 
         }
@@ -29,6 +36,7 @@ namespace DoAnGiuaKy_CaNhan.FObject
             this.point.Add(pt);
             this.myBrush = new SolidBrush(mycolor);
             this.myPen = new Pen(mycolor, MySize);
+            this.check_select = false;
         }
 
         public override bool Select_Obj(Point pt)
@@ -55,5 +63,7 @@ namespace DoAnGiuaKy_CaNhan.FObject
                 return true;
             return false;
         }
+
+       
     }
 }

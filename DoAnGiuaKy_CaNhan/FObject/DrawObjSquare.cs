@@ -11,7 +11,23 @@ namespace DoAnGiuaKy_CaNhan.FObject
     {
         public override void Draw(Graphics Gp)
         {
-            Gp.FillRectangle(myBrush, this.point[0].X, this.point[0].Y, this.point[1].Y - this.point[0].Y, this.point[1].Y - this.point[0].Y);
+            // Convert to Array
+            Point pt = new Point();
+            pt.X = point[1].X;
+            pt.Y = point[0].Y + point[1].X - point[0].X;
+            point[point.Count() - 1] = pt;
+
+            //Draw
+            Gp.FillRectangle(myBrush, this.point[0].X, this.point[0].Y, this.point[1].X - this.point[0].X, this.point[1].X - this.point[0].X);
+
+            //Draw select
+            if (check_select)
+            {
+                for (int i = 0; i < point.Count(); i++)
+                {
+                    Gp.FillRectangle(myBrush, point[i].X - 5, point[i].Y - 5, 10, 10);
+                }
+            }
         }
 
         public override void Create_Obj(Point pt, Color mycolor, int MySize)
@@ -20,13 +36,14 @@ namespace DoAnGiuaKy_CaNhan.FObject
             this.myBrush = new SolidBrush(mycolor);
             this.point.Add(pt);
             this.point.Add(pt);
+            this.check_select = false;
         }
 
         public override bool Select_Obj(Point pt)
         {
             int max_point_X = point[0].X, max_point_Y = point[0].Y;
             int min_point_X = point[0].X, min_point_Y = point[0].Y;
-            for (int i = 0; i < this.point.Count; i++)
+            for (int i = 0; i < this.point.Count(); i++)
             {
                 if (max_point_X < this.point[i].X)
                     max_point_X = this.point[i].X;
@@ -47,4 +64,6 @@ namespace DoAnGiuaKy_CaNhan.FObject
             return false;
         }
     }
+
+
 }

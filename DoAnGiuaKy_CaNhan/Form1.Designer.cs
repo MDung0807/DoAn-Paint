@@ -29,27 +29,31 @@ namespace DoAnGiuaKy_CaNhan
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_move = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
-            this.btn_rect = new System.Windows.Forms.Button();
             this.btn_eraser = new System.Windows.Forms.Button();
-            this.btn_cong = new System.Windows.Forms.Button();
-            this.btn_fill = new System.Windows.Forms.Button();
             this.pic_Color = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_polygon = new System.Windows.Forms.Button();
+            this.btn_cong = new System.Windows.Forms.Button();
+            this.btn_circle = new System.Windows.Forms.Button();
             this.btn_square = new System.Windows.Forms.Button();
+            this.btn_line = new System.Windows.Forms.Button();
+            this.btn_color = new System.Windows.Forms.Button();
+            this.btn_rect = new System.Windows.Forms.Button();
+            this.btn_fill = new System.Windows.Forms.Button();
+            this.btn_ellipse = new System.Windows.Forms.Button();
+            this.btn_pencil = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnChangeSize = new System.Windows.Forms.Button();
+            this.btnunSelect = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.btnSize = new System.Windows.Forms.TrackBar();
             this.btnSelect = new System.Windows.Forms.Button();
             this.btnUnGroup = new System.Windows.Forms.Button();
             this.btnGroup = new System.Windows.Forms.Button();
-            this.btn_polygon = new System.Windows.Forms.Button();
-            this.btn_circle = new System.Windows.Forms.Button();
-            this.btn_line = new System.Windows.Forms.Button();
-            this.btn_color = new System.Windows.Forms.Button();
-            this.btn_ellipse = new System.Windows.Forms.Button();
-            this.btn_pencil = new System.Windows.Forms.Button();
             this.pic = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -78,29 +82,13 @@ namespace DoAnGiuaKy_CaNhan
             // 
             // btn_clear
             // 
-            this.btn_clear.Location = new System.Drawing.Point(295, 12);
+            this.btn_clear.Location = new System.Drawing.Point(406, 59);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(54, 30);
             this.btn_clear.TabIndex = 22;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = true;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
-            // 
-            // btn_rect
-            // 
-            this.btn_rect.BackColor = System.Drawing.Color.DarkGray;
-            this.btn_rect.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_rect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_rect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_rect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_rect.Location = new System.Drawing.Point(158, 54);
-            this.btn_rect.Name = "btn_rect";
-            this.btn_rect.Size = new System.Drawing.Size(66, 43);
-            this.btn_rect.TabIndex = 9;
-            this.btn_rect.Text = "Rectangle";
-            this.btn_rect.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_rect.UseVisualStyleBackColor = false;
-            this.btn_rect.Click += new System.EventHandler(this.btn_rect_Click);
             // 
             // btn_eraser
             // 
@@ -116,39 +104,6 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_eraser.Text = "eraser";
             this.btn_eraser.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_eraser.UseVisualStyleBackColor = false;
-            // 
-            // btn_cong
-            // 
-            this.btn_cong.BackColor = System.Drawing.Color.DarkGray;
-            this.btn_cong.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_cong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_cong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_cong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cong.ForeColor = System.Drawing.Color.Black;
-            this.btn_cong.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_cong.Location = new System.Drawing.Point(298, 54);
-            this.btn_cong.Name = "btn_cong";
-            this.btn_cong.Size = new System.Drawing.Size(58, 43);
-            this.btn_cong.TabIndex = 26;
-            this.btn_cong.Text = "Dcong";
-            this.btn_cong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_cong.UseVisualStyleBackColor = false;
-            this.btn_cong.Click += new System.EventHandler(this.btn_cong_Click);
-            // 
-            // btn_fill
-            // 
-            this.btn_fill.BackColor = System.Drawing.Color.DarkGray;
-            this.btn_fill.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_fill.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_fill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_fill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_fill.Location = new System.Drawing.Point(362, 54);
-            this.btn_fill.Name = "btn_fill";
-            this.btn_fill.Size = new System.Drawing.Size(63, 43);
-            this.btn_fill.TabIndex = 5;
-            this.btn_fill.Text = "Fill";
-            this.btn_fill.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_fill.UseVisualStyleBackColor = false;
             // 
             // pic_Color
             // 
@@ -178,77 +133,6 @@ namespace DoAnGiuaKy_CaNhan
             this.panel3.Size = new System.Drawing.Size(450, 100);
             this.panel3.TabIndex = 21;
             // 
-            // btn_square
-            // 
-            this.btn_square.BackColor = System.Drawing.Color.DarkGray;
-            this.btn_square.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_square.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_square.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_square.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_square.ForeColor = System.Drawing.Color.Black;
-            this.btn_square.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_square.Location = new System.Drawing.Point(230, 52);
-            this.btn_square.Name = "btn_square";
-            this.btn_square.Size = new System.Drawing.Size(62, 45);
-            this.btn_square.TabIndex = 24;
-            this.btn_square.Text = "HVuông";
-            this.btn_square.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_square.UseVisualStyleBackColor = false;
-            this.btn_square.Click += new System.EventHandler(this.btn_square_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkGray;
-            this.panel1.Controls.Add(this.btnSize);
-            this.panel1.Controls.Add(this.btnSelect);
-            this.panel1.Controls.Add(this.btnUnGroup);
-            this.panel1.Controls.Add(this.btnGroup);
-            this.panel1.Controls.Add(this.btn_move);
-            this.panel1.Controls.Add(this.btn_clear);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1261, 108);
-            this.panel1.TabIndex = 3;
-            // 
-            // btnSize
-            // 
-            this.btnSize.Location = new System.Drawing.Point(370, 12);
-            this.btnSize.Name = "btnSize";
-            this.btnSize.Size = new System.Drawing.Size(104, 45);
-            this.btnSize.TabIndex = 27;
-            this.btnSize.Value = 1;
-            this.btnSize.Scroll += new System.EventHandler(this.trackBar1_Scroll);
-            // 
-            // btnSelect
-            // 
-            this.btnSelect.Location = new System.Drawing.Point(100, 12);
-            this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(72, 33);
-            this.btnSelect.TabIndex = 26;
-            this.btnSelect.Text = "Select";
-            this.btnSelect.UseVisualStyleBackColor = true;
-            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
-            // 
-            // btnUnGroup
-            // 
-            this.btnUnGroup.Location = new System.Drawing.Point(100, 51);
-            this.btnUnGroup.Name = "btnUnGroup";
-            this.btnUnGroup.Size = new System.Drawing.Size(72, 33);
-            this.btnUnGroup.TabIndex = 25;
-            this.btnUnGroup.Text = "UnGroup";
-            this.btnUnGroup.UseVisualStyleBackColor = true;
-            // 
-            // btnGroup
-            // 
-            this.btnGroup.Location = new System.Drawing.Point(12, 51);
-            this.btnGroup.Name = "btnGroup";
-            this.btnGroup.Size = new System.Drawing.Size(72, 33);
-            this.btnGroup.TabIndex = 24;
-            this.btnGroup.Text = "Group";
-            this.btnGroup.UseVisualStyleBackColor = true;
-            // 
             // btn_polygon
             // 
             this.btn_polygon.BackColor = System.Drawing.Color.DarkGray;
@@ -269,6 +153,25 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_polygon.UseVisualStyleBackColor = false;
             this.btn_polygon.Click += new System.EventHandler(this.btn_polygon_Click);
             // 
+            // btn_cong
+            // 
+            this.btn_cong.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_cong.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_cong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_cong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btn_cong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cong.ForeColor = System.Drawing.Color.Black;
+            this.btn_cong.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_squiggly_line_24;
+            this.btn_cong.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_cong.Location = new System.Drawing.Point(298, 54);
+            this.btn_cong.Name = "btn_cong";
+            this.btn_cong.Size = new System.Drawing.Size(58, 43);
+            this.btn_cong.TabIndex = 26;
+            this.btn_cong.Text = "Dcong";
+            this.btn_cong.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_cong.UseVisualStyleBackColor = false;
+            this.btn_cong.Click += new System.EventHandler(this.btn_cong_Click);
+            // 
             // btn_circle
             // 
             this.btn_circle.BackColor = System.Drawing.Color.DarkGray;
@@ -288,6 +191,25 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_circle.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btn_circle.UseVisualStyleBackColor = false;
             this.btn_circle.Click += new System.EventHandler(this.btn_circle_Click);
+            // 
+            // btn_square
+            // 
+            this.btn_square.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_square.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_square.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_square.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btn_square.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_square.ForeColor = System.Drawing.Color.Black;
+            this.btn_square.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_square_16;
+            this.btn_square.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_square.Location = new System.Drawing.Point(230, 52);
+            this.btn_square.Name = "btn_square";
+            this.btn_square.Size = new System.Drawing.Size(62, 45);
+            this.btn_square.TabIndex = 24;
+            this.btn_square.Text = "HVuông";
+            this.btn_square.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_square.UseVisualStyleBackColor = false;
+            this.btn_square.Click += new System.EventHandler(this.btn_square_Click);
             // 
             // btn_line
             // 
@@ -328,6 +250,41 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_color.UseVisualStyleBackColor = false;
             this.btn_color.Click += new System.EventHandler(this.btn_color_Click);
             // 
+            // btn_rect
+            // 
+            this.btn_rect.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_rect.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_rect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_rect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btn_rect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_rect.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_rectangle_19;
+            this.btn_rect.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_rect.Location = new System.Drawing.Point(158, 54);
+            this.btn_rect.Name = "btn_rect";
+            this.btn_rect.Size = new System.Drawing.Size(66, 43);
+            this.btn_rect.TabIndex = 9;
+            this.btn_rect.Text = "Rectangle";
+            this.btn_rect.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_rect.UseVisualStyleBackColor = false;
+            this.btn_rect.Click += new System.EventHandler(this.btn_rect_Click);
+            // 
+            // btn_fill
+            // 
+            this.btn_fill.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_fill.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_fill.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_fill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btn_fill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_fill.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_fill_color_16;
+            this.btn_fill.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_fill.Location = new System.Drawing.Point(362, 54);
+            this.btn_fill.Name = "btn_fill";
+            this.btn_fill.Size = new System.Drawing.Size(63, 43);
+            this.btn_fill.TabIndex = 5;
+            this.btn_fill.Text = "Fill";
+            this.btn_fill.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_fill.UseVisualStyleBackColor = false;
+            // 
             // btn_ellipse
             // 
             this.btn_ellipse.BackColor = System.Drawing.Color.DarkGray;
@@ -366,6 +323,92 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_pencil.UseVisualStyleBackColor = false;
             this.btn_pencil.Click += new System.EventHandler(this.btn_pencil_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkGray;
+            this.panel1.Controls.Add(this.btnChangeSize);
+            this.panel1.Controls.Add(this.btnunSelect);
+            this.panel1.Controls.Add(this.btnDelete);
+            this.panel1.Controls.Add(this.btnSize);
+            this.panel1.Controls.Add(this.btnSelect);
+            this.panel1.Controls.Add(this.btnUnGroup);
+            this.panel1.Controls.Add(this.btnGroup);
+            this.panel1.Controls.Add(this.btn_move);
+            this.panel1.Controls.Add(this.btn_clear);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1261, 108);
+            this.panel1.TabIndex = 3;
+            // 
+            // btnChangeSize
+            // 
+            this.btnChangeSize.Location = new System.Drawing.Point(266, 28);
+            this.btnChangeSize.Name = "btnChangeSize";
+            this.btnChangeSize.Size = new System.Drawing.Size(82, 45);
+            this.btnChangeSize.TabIndex = 30;
+            this.btnChangeSize.Text = "Change\r\nSize";
+            this.btnChangeSize.UseVisualStyleBackColor = true;
+            this.btnChangeSize.Click += new System.EventHandler(this.ChangeSize_Click);
+            // 
+            // btnunSelect
+            // 
+            this.btnunSelect.Location = new System.Drawing.Point(188, 12);
+            this.btnunSelect.Name = "btnunSelect";
+            this.btnunSelect.Size = new System.Drawing.Size(72, 33);
+            this.btnunSelect.TabIndex = 29;
+            this.btnunSelect.Text = "UnSelect";
+            this.btnunSelect.UseVisualStyleBackColor = true;
+            this.btnunSelect.Click += new System.EventHandler(this.unSelect_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(188, 51);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(72, 33);
+            this.btnDelete.TabIndex = 28;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.bntDelete_Click);
+            // 
+            // btnSize
+            // 
+            this.btnSize.Location = new System.Drawing.Point(370, 12);
+            this.btnSize.Name = "btnSize";
+            this.btnSize.Size = new System.Drawing.Size(104, 45);
+            this.btnSize.TabIndex = 27;
+            this.btnSize.Value = 1;
+            this.btnSize.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // btnSelect
+            // 
+            this.btnSelect.Location = new System.Drawing.Point(100, 12);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(72, 33);
+            this.btnSelect.TabIndex = 26;
+            this.btnSelect.Text = "Select";
+            this.btnSelect.UseVisualStyleBackColor = true;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+            // 
+            // btnUnGroup
+            // 
+            this.btnUnGroup.Location = new System.Drawing.Point(100, 51);
+            this.btnUnGroup.Name = "btnUnGroup";
+            this.btnUnGroup.Size = new System.Drawing.Size(72, 33);
+            this.btnUnGroup.TabIndex = 25;
+            this.btnUnGroup.Text = "UnGroup";
+            this.btnUnGroup.UseVisualStyleBackColor = true;
+            // 
+            // btnGroup
+            // 
+            this.btnGroup.Location = new System.Drawing.Point(12, 51);
+            this.btnGroup.Name = "btnGroup";
+            this.btnGroup.Size = new System.Drawing.Size(72, 33);
+            this.btnGroup.TabIndex = 24;
+            this.btnGroup.Text = "Group";
+            this.btnGroup.UseVisualStyleBackColor = true;
+            // 
             // pic
             // 
             this.pic.BackColor = System.Drawing.Color.White;
@@ -389,10 +432,13 @@ namespace DoAnGiuaKy_CaNhan
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pic);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -426,6 +472,9 @@ namespace DoAnGiuaKy_CaNhan
         private System.Windows.Forms.TrackBar btnSize;
         private System.Windows.Forms.Button btn_color;
         private System.Windows.Forms.Button btn_pencil;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnunSelect;
+        private System.Windows.Forms.Button btnChangeSize;
     }
 }
 
