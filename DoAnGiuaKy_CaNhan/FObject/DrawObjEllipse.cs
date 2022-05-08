@@ -11,16 +11,14 @@ namespace DoAnGiuaKy_CaNhan.FObject
     {
         public override void Draw(Graphics Gp)
         {
-            int width = Math.Abs(this.point[1].X - this.point[0].X);
-            int height = Math.Abs(this.point[1].Y - this.point[0].Y);
-            Gp.FillEllipse(this.myBrush, this.point[0].X, this.point[0].Y, width, height);
+            Gp.FillEllipse(this.myBrush, this.point[0].X, this.point[0].Y, this.point[1].X - this.point[0].X, this.point[1].Y - this.point[0].Y);
 
             if (check_select)
             {
                 for (int i = 0; i < point.Count(); i++)
                 {
-                    Gp.FillRectangle(myBrush, Math.Abs(point[i].X - 5), Math.Abs(point[i].Y - 5), 10, 10);
-                    Gp.DrawRectangle(this.myPen, this.point[0].X, this.point[0].Y, width, height);
+                    Gp.FillRectangle(myBrush, point[i].X - 5, point[i].Y - 5, 10, 10);
+                    Gp.DrawRectangle(this.myPen, this.point[0].X, this.point[0].Y, this.point[1].X - this.point[0].X,  this.point[1].Y - this.point[0].Y);
 
                 }
             }

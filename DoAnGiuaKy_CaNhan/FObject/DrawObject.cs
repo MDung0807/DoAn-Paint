@@ -14,6 +14,8 @@ namespace DoAnGiuaKy_CaNhan.FObject
         public SolidBrush myBrush;
         public List<Point> point = new List<Point>();
         public bool check_select;
+        
+
         public abstract void Draw(Graphics Gp);
         public abstract void Create_Obj(Point pt, Color mycolor, int MySize);
 
