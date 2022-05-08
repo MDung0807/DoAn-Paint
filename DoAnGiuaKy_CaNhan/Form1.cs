@@ -14,35 +14,52 @@ namespace DoAnGiuaKy_CaNhan
     public partial class Form1 : Form
     {
 
-        Graphics Gp;
-        Bitmap bm;
-        Color myColor;
-        ColorDialog color = new ColorDialog();
-        Point p1, p2;
-        int MySize;
+        public Graphics Gp;
+        public Bitmap bm;
+        public Color myColor;
+        public ColorDialog color = new ColorDialog();
+        public Point p1, p2;
+        public int MySize;
 
 
 
-        bool isPress = false;
-        bool bLine = false;
-        bool bEllipse = false;
-        bool bCircle = false;
-        bool bRectangle = false;
-        bool bMove = false;
-        //bool bPencil = false;
-        bool bDcong = false;
-        bool bPolygon = false;
-        bool bSquare = false;
-        bool bDelete = false;
-        bool bChange_size = false;
+        //bool isPress = false;
+        //bool bLine = false;
+        //bool bEllipse = false;
+        //bool bCircle = false;
+        //bool bRectangle = false;
+        //bool bMove = false;
+        //bool bDcong = false;
+        //bool bPolygon = false;
+        //bool bSquare = false;
+        //bool bDelete = false;
+        //bool bChange_size = false;
 
-        bool enable_function = false;
-        bool select = false;
-        bool un_select = false;
-        bool select_to_more = false;
-        bool newObj = false;
+        //bool enable_function = false;
+        //bool select = false;
+        //bool un_select = false;
+        //bool select_to_more = false;
+        //bool newObj = false;
 
-        List<DrawObject> lstDrawObj = new List<DrawObject>();
+        public bool isPress = false;
+        public bool bLine = false;
+        public bool bEllipse = false;
+        public bool bCircle = false;
+        public bool bRectangle = false;
+        public bool bMove = false;
+        public bool bDcong = false;
+        public bool bPolygon = false;
+        public bool bSquare = false;
+        public bool bDelete = false;
+        public bool bChange_size = false;
+
+        public bool enable_function = false;
+        public bool select = false;
+        public bool un_select = false;
+        public bool select_to_more = false;
+        public bool newObj = false;
+
+        public List<DrawObject> lstDrawObj = new List<DrawObject>();
 
         public Form1()
         {
@@ -51,7 +68,7 @@ namespace DoAnGiuaKy_CaNhan
             Gp = Graphics.FromImage(bm);
             Gp.Clear(Color.White);
             pic.Image = bm;
-            myColor = Color.Aqua;
+            myColor = Color.FromArgb(255, 128, 128);
             this.pic_Color.BackColor = myColor;
         }
 
@@ -283,7 +300,7 @@ namespace DoAnGiuaKy_CaNhan
             {
                 Change_Size();
             }    
-
+            
         }
         private void pic_MouseMove(object sender, MouseEventArgs e)
         {
@@ -377,11 +394,6 @@ namespace DoAnGiuaKy_CaNhan
         private void btn_rect_Click(object sender, EventArgs e)
         {
             this.bRectangle = true;
-        }
-
-        private void btn_pencil_Click(object sender, EventArgs e)
-        {
-            //this.bPencil = true;
         }
 
         private void btn_square_Click(object sender, EventArgs e)

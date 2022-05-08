@@ -11,7 +11,6 @@ namespace DoAnGiuaKy_CaNhan.FObject
     {
         public override void Draw(Graphics Gp)
         {
-            //Gp.DrawRectangle(this.myPen, this.point[0].X, this.point[0].Y, this.point[1].X - this.point[0].X, this.point[1].Y - this.point[0].Y);
             Gp.FillRectangle(this.myBrush, this.point[0].X, this.point[0].Y, this.point[1].X - this.point[0].X, this.point[1].Y - this.point[0].Y);
 
             if (check_select)
@@ -57,14 +56,6 @@ namespace DoAnGiuaKy_CaNhan.FObject
                 return true;
             return false;
         }
-
-        //public override void Select_GP(Graphics Gp)
-        //{
-        //    for (int i = 0; i < point.Count(); i++)
-        //    {
-        //        Gp.FillRectangle(myBrush, point[i].X - 5, point[i].Y - 5, 10, 10);
-        //    }
-        //}
 
     }
 }

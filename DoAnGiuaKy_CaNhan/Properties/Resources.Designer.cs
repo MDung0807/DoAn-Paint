@@ -63,16 +63,6 @@ namespace DoAnGiuaKy_CaNhan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_circle_16 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-circle-16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_ellipse_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-ellipse-24", resourceCulture);
@@ -86,6 +76,16 @@ namespace DoAnGiuaKy_CaNhan.Properties {
         internal static System.Drawing.Bitmap icons8_fill_color_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-fill-color-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_filled_circle_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-filled-circle-20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,29 +113,9 @@ namespace DoAnGiuaKy_CaNhan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_pen_30 {
+        internal static System.Drawing.Bitmap icons8_pen_20 {
             get {
-                object obj = ResourceManager.GetObject("icons8-pen-30", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_pen_60 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-pen-60", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_pen_601 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-pen-601", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-pen-20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,39 +133,9 @@ namespace DoAnGiuaKy_CaNhan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_polygon_50 {
+        internal static System.Drawing.Bitmap icons8_rectangle_20 {
             get {
-                object obj = ResourceManager.GetObject("icons8-polygon-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_rectangle_19 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-rectangle-19", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_rectangle_36 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-rectangle-36", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_rectangle_361 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-rectangle-361", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-rectangle-20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

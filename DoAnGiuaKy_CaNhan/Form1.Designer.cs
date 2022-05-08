@@ -33,7 +33,6 @@ namespace DoAnGiuaKy_CaNhan
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_move = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
-            this.btn_eraser = new System.Windows.Forms.Button();
             this.pic_Color = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_polygon = new System.Windows.Forms.Button();
@@ -43,9 +42,7 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_line = new System.Windows.Forms.Button();
             this.btn_color = new System.Windows.Forms.Button();
             this.btn_rect = new System.Windows.Forms.Button();
-            this.btn_fill = new System.Windows.Forms.Button();
             this.btn_ellipse = new System.Windows.Forms.Button();
-            this.btn_pencil = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnChangeSize = new System.Windows.Forms.Button();
             this.btnunSelect = new System.Windows.Forms.Button();
@@ -90,26 +87,11 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_clear.UseVisualStyleBackColor = true;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
-            // btn_eraser
-            // 
-            this.btn_eraser.BackColor = System.Drawing.Color.DarkGray;
-            this.btn_eraser.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_eraser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_eraser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_eraser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_eraser.Location = new System.Drawing.Point(83, 54);
-            this.btn_eraser.Name = "btn_eraser";
-            this.btn_eraser.Size = new System.Drawing.Size(69, 43);
-            this.btn_eraser.TabIndex = 7;
-            this.btn_eraser.Text = "eraser";
-            this.btn_eraser.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_eraser.UseVisualStyleBackColor = false;
-            // 
             // pic_Color
             // 
-            this.pic_Color.Location = new System.Drawing.Point(5, 54);
+            this.pic_Color.Location = new System.Drawing.Point(20, 54);
             this.pic_Color.Name = "pic_Color";
-            this.pic_Color.Size = new System.Drawing.Size(61, 43);
+            this.pic_Color.Size = new System.Drawing.Size(130, 43);
             this.pic_Color.TabIndex = 3;
             this.pic_Color.UseVisualStyleBackColor = true;
             // 
@@ -124,13 +106,10 @@ namespace DoAnGiuaKy_CaNhan
             this.panel3.Controls.Add(this.btn_line);
             this.panel3.Controls.Add(this.btn_color);
             this.panel3.Controls.Add(this.btn_rect);
-            this.panel3.Controls.Add(this.btn_fill);
             this.panel3.Controls.Add(this.btn_ellipse);
-            this.panel3.Controls.Add(this.btn_pencil);
-            this.panel3.Controls.Add(this.btn_eraser);
-            this.panel3.Location = new System.Drawing.Point(498, 5);
+            this.panel3.Location = new System.Drawing.Point(597, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(450, 100);
+            this.panel3.Size = new System.Drawing.Size(365, 100);
             this.panel3.TabIndex = 21;
             // 
             // btn_polygon
@@ -143,7 +122,7 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_polygon.ForeColor = System.Drawing.Color.Black;
             this.btn_polygon.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_polygon_16;
             this.btn_polygon.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_polygon.Location = new System.Drawing.Point(362, 3);
+            this.btn_polygon.Location = new System.Drawing.Point(291, 4);
             this.btn_polygon.Name = "btn_polygon";
             this.btn_polygon.Size = new System.Drawing.Size(63, 43);
             this.btn_polygon.TabIndex = 27;
@@ -163,7 +142,7 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_cong.ForeColor = System.Drawing.Color.Black;
             this.btn_cong.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_squiggly_line_24;
             this.btn_cong.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_cong.Location = new System.Drawing.Point(298, 54);
+            this.btn_cong.Location = new System.Drawing.Point(296, 54);
             this.btn_cong.Name = "btn_cong";
             this.btn_cong.Size = new System.Drawing.Size(58, 43);
             this.btn_cong.TabIndex = 26;
@@ -180,9 +159,9 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_circle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btn_circle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_circle.ForeColor = System.Drawing.Color.Black;
-            this.btn_circle.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_circle_16;
+            this.btn_circle.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_filled_circle_20;
             this.btn_circle.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_circle.Location = new System.Drawing.Point(298, 3);
+            this.btn_circle.Location = new System.Drawing.Point(227, 4);
             this.btn_circle.Name = "btn_circle";
             this.btn_circle.Size = new System.Drawing.Size(58, 43);
             this.btn_circle.TabIndex = 25;
@@ -202,9 +181,9 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_square.ForeColor = System.Drawing.Color.Black;
             this.btn_square.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_square_16;
             this.btn_square.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_square.Location = new System.Drawing.Point(230, 52);
+            this.btn_square.Location = new System.Drawing.Point(228, 54);
             this.btn_square.Name = "btn_square";
-            this.btn_square.Size = new System.Drawing.Size(62, 45);
+            this.btn_square.Size = new System.Drawing.Size(62, 43);
             this.btn_square.TabIndex = 24;
             this.btn_square.Text = "HVuông";
             this.btn_square.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -220,7 +199,7 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_line.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_line.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_line_16;
             this.btn_line.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_line.Location = new System.Drawing.Point(230, 3);
+            this.btn_line.Location = new System.Drawing.Point(159, 4);
             this.btn_line.Name = "btn_line";
             this.btn_line.Size = new System.Drawing.Size(62, 43);
             this.btn_line.TabIndex = 10;
@@ -240,9 +219,9 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_color.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn_color.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_paint_palette_16;
             this.btn_color.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_color.Location = new System.Drawing.Point(3, 3);
+            this.btn_color.Location = new System.Drawing.Point(18, 3);
             this.btn_color.Name = "btn_color";
-            this.btn_color.Size = new System.Drawing.Size(63, 43);
+            this.btn_color.Size = new System.Drawing.Size(63, 45);
             this.btn_color.TabIndex = 4;
             this.btn_color.Text = "Color";
             this.btn_color.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -257,9 +236,9 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_rect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_rect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btn_rect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_rect.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_rectangle_19;
+            this.btn_rect.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_rectangle_20;
             this.btn_rect.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_rect.Location = new System.Drawing.Point(158, 54);
+            this.btn_rect.Location = new System.Drawing.Point(156, 54);
             this.btn_rect.Name = "btn_rect";
             this.btn_rect.Size = new System.Drawing.Size(66, 43);
             this.btn_rect.TabIndex = 9;
@@ -267,23 +246,6 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_rect.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_rect.UseVisualStyleBackColor = false;
             this.btn_rect.Click += new System.EventHandler(this.btn_rect_Click);
-            // 
-            // btn_fill
-            // 
-            this.btn_fill.BackColor = System.Drawing.Color.DarkGray;
-            this.btn_fill.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_fill.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_fill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_fill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_fill.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_fill_color_16;
-            this.btn_fill.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_fill.Location = new System.Drawing.Point(362, 54);
-            this.btn_fill.Name = "btn_fill";
-            this.btn_fill.Size = new System.Drawing.Size(63, 43);
-            this.btn_fill.TabIndex = 5;
-            this.btn_fill.Text = "Fill";
-            this.btn_fill.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_fill.UseVisualStyleBackColor = false;
             // 
             // btn_ellipse
             // 
@@ -294,7 +256,7 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_ellipse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ellipse.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_ellipse_24;
             this.btn_ellipse.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_ellipse.Location = new System.Drawing.Point(158, 3);
+            this.btn_ellipse.Location = new System.Drawing.Point(87, 4);
             this.btn_ellipse.Name = "btn_ellipse";
             this.btn_ellipse.Size = new System.Drawing.Size(66, 43);
             this.btn_ellipse.TabIndex = 8;
@@ -303,25 +265,6 @@ namespace DoAnGiuaKy_CaNhan
             this.btn_ellipse.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btn_ellipse.UseVisualStyleBackColor = false;
             this.btn_ellipse.Click += new System.EventHandler(this.btn_ellipse_Click);
-            // 
-            // btn_pencil
-            // 
-            this.btn_pencil.BackColor = System.Drawing.Color.DarkGray;
-            this.btn_pencil.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_pencil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_pencil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btn_pencil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_pencil.Image = global::DoAnGiuaKy_CaNhan.Properties.Resources.icons8_pen_30;
-            this.btn_pencil.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_pencil.Location = new System.Drawing.Point(83, 3);
-            this.btn_pencil.Name = "btn_pencil";
-            this.btn_pencil.Size = new System.Drawing.Size(69, 43);
-            this.btn_pencil.TabIndex = 6;
-            this.btn_pencil.Text = "Pencil";
-            this.btn_pencil.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_pencil.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.btn_pencil.UseVisualStyleBackColor = false;
-            this.btn_pencil.Click += new System.EventHandler(this.btn_pencil_Click);
             // 
             // panel1
             // 
@@ -451,30 +394,27 @@ namespace DoAnGiuaKy_CaNhan
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_circle;
-        private System.Windows.Forms.Button btn_move;
-        private System.Windows.Forms.Button btn_clear;
-        private System.Windows.Forms.Button btn_line;
-        private System.Windows.Forms.Button btn_rect;
-        private System.Windows.Forms.Button btn_ellipse;
-        private System.Windows.Forms.Button btn_eraser;
-        private System.Windows.Forms.Button btn_polygon;
-        private System.Windows.Forms.Button btn_cong;
-        private System.Windows.Forms.Button btn_fill;
-        private System.Windows.Forms.Button pic_Color;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btn_square;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pic;
-        private System.Windows.Forms.Button btnUnGroup;
-        private System.Windows.Forms.Button btnGroup;
-        private System.Windows.Forms.Button btnSelect;
-        private System.Windows.Forms.TrackBar btnSize;
-        private System.Windows.Forms.Button btn_color;
-        private System.Windows.Forms.Button btn_pencil;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnunSelect;
-        private System.Windows.Forms.Button btnChangeSize;
+        public System.Windows.Forms.Button btn_circle;
+        public System.Windows.Forms.Button btn_move;
+        public System.Windows.Forms.Button btn_clear;
+        public System.Windows.Forms.Button btn_line;
+        public System.Windows.Forms.Button btn_rect;
+        public System.Windows.Forms.Button btn_ellipse;
+        public System.Windows.Forms.Button btn_polygon;
+        public System.Windows.Forms.Button btn_cong;
+        public System.Windows.Forms.Button pic_Color;
+        public System.Windows.Forms.Button btn_square;
+        public System.Windows.Forms.PictureBox pic;
+        public System.Windows.Forms.Button btnUnGroup;
+        public System.Windows.Forms.Button btnGroup;
+        public System.Windows.Forms.Button btnSelect;
+        public System.Windows.Forms.TrackBar btnSize;
+        public System.Windows.Forms.Button btn_color;
+        public System.Windows.Forms.Button btnDelete;
+        public System.Windows.Forms.Button btnunSelect;
+        public System.Windows.Forms.Button btnChangeSize;
     }
 }
 

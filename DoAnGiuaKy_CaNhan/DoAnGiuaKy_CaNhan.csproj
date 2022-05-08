@@ -62,6 +62,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Support\Support_Function.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -69,13 +74,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -90,16 +89,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-paint-palette-16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-pen-30.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-pen-60.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-pen-601.png" />
+    <None Include="Resources\icons8-pen-20.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-ellipse-24.png" />
@@ -108,22 +98,16 @@
     <None Include="Resources\icons8-line-16.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-circle-16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-polygon-50.png" />
+    <None Include="Resources\icons8-filled-circle-20.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-polygon-16.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-rectangle-36.png" />
+    <None Include="Resources\icons8-rectangle-20.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-rectangle-19.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-rectangle-361.png" />
+    <None Include="Resources\icons8-square-16.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-squiggly-line-24.png" />
@@ -132,7 +116,7 @@
     <None Include="Resources\icons8-fill-color-16.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-square-16.png" />
+    <None Include="Resources\icons8-paint-palette-16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

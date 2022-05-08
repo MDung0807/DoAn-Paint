@@ -13,8 +13,8 @@ D:\Nam2(2021-2022)\HK2\Lập trình window\DoAnGiuaKy\DoAn-Paint\DoAnGiuaKy_CaNh
 D:\Nam2(2021-2022)\HK2\Lập trình window\DoAnGiuaKy\DoAn-Paint\DoAnGiuaKy_CaNhan\bin\Debug\DoAnGiuaKy_CaNhan.pdb
 D:\Nam2(2021-2022)\HK2\Lập trình window\DoAnGiuaKy\DoAn-Paint\DoAnGiuaKy_CaNhan\obj\Debug\DoAnGiuaKy_CaNhan.csproj.AssemblyReference.cache
 D:\Nam2(2021-2022)\HK2\Lập trình window\DoAnGiuaKy\DoAn-Paint\DoAnGiuaKy_CaNhan\obj\Debug\DoAnGiuaKy_CaNhan.Form1.resources
-D:\Nam2(2021-2022)\HK2\Lập trình window\DoAnGiuaKy\DoAn-Paint\DoAnGiuaKy_CaNhan\obj\Debug\DoAnGiuaKy_CaNhan.Properties.Resources.resources
 D:\Nam2(2021-2022)\HK2\Lập trình window\DoAnGiuaKy\DoAn-Paint\DoAnGiuaKy_CaNhan\obj\Debug\DoAnGiuaKy_CaNhan.csproj.GenerateResource.cache
 D:\Nam2(2021-2022)\HK2\Lập trình window\DoAnGiuaKy\DoAn-Paint\DoAnGiuaKy_CaNhan\obj\Debug\DoAnGiuaKy_CaNhan.csproj.CoreCompileInputs.cache
 D:\Nam2(2021-2022)\HK2\Lập trình window\DoAnGiuaKy\DoAn-Paint\DoAnGiuaKy_CaNhan\obj\Debug\DoAnGiuaKy_CaNhan.exe
 D:\Nam2(2021-2022)\HK2\Lập trình window\DoAnGiuaKy\DoAn-Paint\DoAnGiuaKy_CaNhan\obj\Debug\DoAnGiuaKy_CaNhan.pdb
+D:\Nam2(2021-2022)\HK2\Lập trình window\DoAnGiuaKy\DoAn-Paint\DoAnGiuaKy_CaNhan\obj\Debug\DoAnGiuaKy_CaNhan.Properties.Resources.resources
