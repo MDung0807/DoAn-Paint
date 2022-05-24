@@ -116,6 +116,8 @@ namespace DoAnGiuaKy_CaNhan.Support
        
         public void Paint (Graphics gp)
         {
+            bool is_select = false;
+            this.enable_function = false;
             for (int i = 0; i < this.lstDrawObj.Count; i++)
             {
                 this.lstDrawObj[i].Draw(gp);
@@ -123,12 +125,21 @@ namespace DoAnGiuaKy_CaNhan.Support
 
             foreach (DrawObject i in lstDrawObj)
             {
-                if (i.check_select)
+                if (i.check_select == true)
                 {
-                    this.enable_function = true;
-                    break;
-                }
+                    is_select = true;
+                }    
             }
+
+            if (is_select)
+            {
+                this.enable_function = true;
+            }  
+            
+            if (lstDrawObj.Count == 0)
+            {
+                this.enable_function = false;
+            }    
             
         }
 
